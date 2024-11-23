@@ -12,24 +12,24 @@
 
 /* import theme modules */
 @import url('https://refact0r.github.io/system24/src/main.css'); /* main theme css. DO NOT REMOVE */
-@import url('https://refact0r.github.io/system24/src/unrounding.css'); /* gets rid of all rounded corners. remove if you want rounded corners. */
+@import url('https://raw.githubusercontent.com/memeasism/MEMECORD/refs/heads/main/src/unrounding.css'); /* gets rid of all rounded corners. remove if you want rounded corners. */
 
 /* customize things here */
 :root {
-	--font: 'DM Mono'; /* UI font name. it must be installed on your system. */
+	--font: 'Source Code Pro'; /* UI font name. it must be installed on your system. */
 	letter-spacing: -0.05ch; /* decreases letter spacing for better readability. */
 	font-weight: 300; /* UI font weight. */
 	--label-font-weight: 500; /* font weight for panel labels. */
-	--corner-text: 'system24'; /* custom text to display in the corner. only works on windows. */
+	--corner-text: 'DIEcord'; /* custom text to display in the corner. only works on windows. */
 	--pad: 16px; /* padding between panels. */
 	--txt-pad: 10px; /* padding inside panels to prevent labels from clipping */
 	--panel-roundness: 0px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
 	/* background colors */
-	--bg-0: oklch(19% 0 0); /* main background color. */
-	--bg-1: oklch(23% 0 0); /* background color for secondary elements like code blocks, embeds, etc. */
+	--bg-0: var(--black) /* oklch(19% 0 0)*/; /* main background color. */
+	--bg-1: var(--gray-1) /* oklch(23% 0 0) */; /* background color for secondary elements like code blocks, embeds, etc. */
 	--bg-2: oklch(27% 0 0); /* color of neutral buttons. */
-	--bg-3: oklch(31% 0 0); /* color of neutral buttons when hovered. */
+	--bg-3: var(--gray) /* oklch(31% 0 0) */; /* color of neutral buttons when hovered. */
 
 	/* state modifiers */
 	--hover: oklch(54% 0 0 / 0.1); /* color of hovered elements. */
@@ -45,8 +45,8 @@
 	--txt-3: oklch(40% 0 0); /* color of muted text. */
 
 	/* accent colors */
-	--acc-0: var(--purple); /* main accent color. */
-	--acc-1: var(--purple-1); /* color of accent buttons when hovered. */
+	--acc-0: var(--green-custom-1) /* var(--purple) */; /* main accent color. */
+	--acc-1: var(--green-custom-2) /*var(--purple-1)*/; /* color of accent buttons when hovered. */
 	--acc-2: var(--purple-2); /* color of accent buttons when clicked. */
 
 	/* borders */
@@ -57,7 +57,7 @@
 
 	/* status dot colors */
 	--online-dot: var(--green); /* color of online dot. */
-	--dnd-dot: var(--pink); /* color of do not disturb dot. */
+	--dnd-dot: var(--red) /* var(--pink) */; /* color of do not disturb dot. */
 	--idle-dot: var(--yellow); /* color of idle dot. */
 	--streaming-dot: var(--purple); /* color of streaming dot. */
 
@@ -81,4 +81,12 @@
 	--green: oklch(73% 0.12 160);
 	--green-1: oklch(63% 0.12 160);
 	--green-2: oklch(53% 0.12 160);
+
+	/* CUSTOM */
+	--gray: rgb(50, 50, 50);
+	--gray-1: rgb(15,15,15);
+	--black: rgb(0, 0, 0);
+	--red: rgb(255, 0, 0);
+	--green-custom-1: rgb(0, 255, 0);
+	--green-custom-2: rgb(0, 100, 0);
 }
